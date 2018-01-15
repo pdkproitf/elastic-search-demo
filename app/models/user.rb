@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+
+  include Searchable
 
   index_name "elasticsearch_demo_#{User.table_name}"
 

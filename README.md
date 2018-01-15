@@ -1,17 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Integrate Elasticsearch into rails project.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.3.1p112
 
-* System dependencies
+* System dependencies:
+- `gem 'elasticsearch-model'`
+- `gem 'elasticsearch-rails'`
+- `gem 'elasticsearch-persistence'`
 
-* Configuration
+* Configuration:
+- elastichsearch port: 9200
 
-* Database creation
+* Database creation: sqllite
 
 * Database initialization
 
@@ -22,3 +25,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+

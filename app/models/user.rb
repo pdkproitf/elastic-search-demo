@@ -15,4 +15,6 @@ class User < ApplicationRecord
 
   after_save    -> { __elasticsearch__.index_document }
   after_destroy -> { __elasticsearch__.delete_document }
+
+  has_many :articles
 end
